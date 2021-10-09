@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "Barlow-Regular";
+  src: local("Barlow-Regular"), url(../fonts/Barlow-Regular.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  background-color: #EFF6FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+}
+
+/* Блок формы */
+.form__data {
+  font-family: "Barlow-Regular", "Arial", "Lusida Sans", sans-serif;
+  min-width: 1040px;
+  /* max-width: 1500px; */
+  min-height: 700px;
+  /* max-height: 1180px; */
+  box-shadow: 0 0 5px #ccc;
+  background-color: #ffffff;
+  background: url(../img/bg.jpg) 0 0/auto 100% no-repeat;
+}
+
+/* Логотип */
+.form__logo {
+  margin: 30px 0px 0px 30px;
+}
+
+/* Отступы заголовков */
+h2, h3 {
+  margin: 20px 0 0 578px;
+}
+
+/* Первый заголовок */
+h2 {
+  font-family: "Barlow-Regular";
+  font-size: 22px;
+  font-weight: 600;
+  color: #2A4A5C;
+}
+
+/* Первое описание */
+.form__text_one {
+  margin: 12px 0 0 580px;
+  font-family: "Barlow-Regular";
+  font-weight: 500;
+  font-size: 15px;
+  color: #7B8A92;
+}
+
+/* Блок социальных кнопок */
+.form__social {
+  margin: 40px 0 0 580px;
+}
+
+.btn__facebook {
+  width: 190px;
+  height: 30px;
+  font-family: "Barlow-Regular";
+  font-size: 12px;
+  font-weight: 200;
+  color: #EEEEEE;
+  background-color: #255A9B;
+  border: none;
+}
+
+.btn_icon_fb {
+  margin: 0 10px 0 -15px;
+}
+
+.btn__linkedin {
+  width: 190px;
+  height: 30px;
+  font-family: "Barlow-Regular";
+  font-size: 12px;
+  font-weight: 200;
+  color: #EEEEEE;
+  background-color: #0076B6;
+  border: none;
+  margin-left: 22px;
+}
+
+.btn_icon_in {
+  margin: 0 10px 0 -15px;
+}
+
+/* Блок линии с текстом */
+.form__title {
+  overflow: hidden;
+  text-align: center;
+  font-family: "Barlow-Regular";
+  font-size: 10px;
+  font-weight: 200;
+  margin: 30px 53px 0 580px;
+}
+
+.form__title span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form__title:before, .form__title:after {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+  height: 1px;
+  background-color: #AFAFAF;
+  position: relative;
+}
+
+.form__title:before {
+  margin-left: -100px;
+  left: -1px;
+}
+
+.form__title:after {
+  margin-right: -100px;
+  right: -1px;
+}
+
+/* Блок полей ввода */
+.form__group {
+  display: flex;
+  width: 450px;
+  margin: 25px 0px 0 580px;
+  position: relative;
+}
+
+.form__input, .form__button {
+  font-family: sans-serif;
+  letter-spacing: normal;
+  font-size: 13px;
+}
+
+.form__label {
+  position: absolute;
+  /* width: 184px; */
+  top: 0;
+  z-index: -1;
+  font-size: 12px;
+  color: #7B8A92;
+  transition: 0.3s;
+  margin-top: 2px;
+  /* Попробовать исправить отступы на более корректные значения */
+  margin: 0px 0 0 -205px;
+  padding: 0px 0px 0px 0px;
+}
+
+.form__input {
+  width: 182px;
+  padding: 20px 3px 3px 6px;
+  background-color: transparent;
+  outline: none;
+  transition: 0.3s;
+  margin-right: 20px;
+  border: 1px solid #AFAFAF;
+  border-radius: 0 0 3px 3px;
+}
+
+.form__phone .form__label {
+  display: inline-block;
+  margin: 0px 30px 0 -205px;
+}
+
+.form__phone .form__input {
+  display: inline-block;
+}
+
+/* Второй заголовок */
+h3 {
+  margin: 20px 0 0 582px;
+  font-family: "Barlow-Regular";
+  font-size: 16.5px;
+  font-weight: 600;
+  color: #2A4A5C;
+}
+
+/* Второй подзаголовок */
+.form__text_two {
+  margin: 12px 0 0 582px;
+  font-family: "Barlow-Regular";
+  font-weight: 500;
+  font-size: 11px;
+  color: #7B8A92;
+}
+
+/* Группа радио кнопок */
+.form__radio_btn {
+  display: flex;
+  width: 380px;
+  margin: 40px 0 0 580px;
+  padding-right: 10px;
+  justify-content: space-between;
+  font-family: "Barlow-Regular";
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.label_radio {
+  margin-right: 10px;
+  margin-left: 6px;
+}
+
+.radio_icon_i {
+  width: 10px;
+  margin-left: -8px;
+}
+
+/* Текстовый блок */
+.form__text_info {
+  width: 206px;
+  position: absolute;
+  font-family: "Barlow-Regular";
+  font-size: 12px;
+  font-weight: 200;
+  color: #7B8A92;
+  transition: 0.3s;
+  margin: 20px 0 0 586px;
+  padding: 10px 10px 12px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 25px #96A5B1;
+}
+
+/* Чекбокс */
+.form__check {
+  margin: 120px 0 0 580px;
+  font-size: 12px;
+  color: #7B8A92;
+}
+
+/* Кнопка */
+.form__button {
+  width: 190px;
+  height: 30px;
+  margin: 40px 0 0 584px;
+  padding: 10px auto;
+  border: none;
+  border-radius: 3px;
+  background-color: #3698FB;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form__button:focus, .form__button:hover {
+  background-color: #0b67c4;
+}
+
+.form__input:focus, 
+form__input:not(:placeholder-shown) {
+  color: #b4afaf;
+  border-radius: 0 3px 0 0;
+  border-left: 2px solid #3698FB;
+}
+
